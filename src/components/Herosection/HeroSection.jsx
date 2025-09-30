@@ -2,7 +2,7 @@ import React from "react";
 import uane_fdr_logos from "../../img/uane_fdr_logos.png"
 import course_picture from "../../img/course_picture.png"
 //import "bootstrap/dist/css/bootstrap.min.css";
-//import "./Section.css"; // custom styles
+import style from "./HeroSection.module.css"; // custom styles
 
 const HeroSection = () => {
   return (
@@ -34,7 +34,7 @@ const HeroSection = () => {
 	    </div> 
 	    {/* Button right (goes below on mobile) */} 
 	    <div className="col-12 col-md-6 text-center text-sm-start"> 
-	      <button className="btn rounded-pill fw-bold px-4 py-2" style={{backgroundColor: "#138E98", color: "white"}}> Faça sua matrícula </button> 
+	      <button className={"btn rounded-pill fw-bold px-4 py-2 " + style.enroll_button}> Faça sua matrícula </button> 
 	    </div>
 	  </div>
 
