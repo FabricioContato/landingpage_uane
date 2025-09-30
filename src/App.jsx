@@ -2,6 +2,7 @@ import Welcome from "./components/Welcome"
 import Navbar from "./components/Navbar/Navbar"
 import HeroSection from "./components/Herosection/HeroSection"
 import CourseStats from "./components/CourseStats/CourseStats"
+import CollapsiblePanels from "./components/CollapsiblePanels/CollapsiblePanels"
 
 export default function App() {
 return (
@@ -9,8 +10,8 @@ return (
 <Navbar/>
 <HeroSection />
 <CourseStats />
-<div>Hello World</div>
-<Welcome />
+<CollapsiblePanels />
+<CollapsiblePanels title="O que você vai aprender aprender"/>
 </>
 );
 }
