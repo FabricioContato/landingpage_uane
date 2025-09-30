@@ -1,0 +1,12 @@
+.bg_nav {
+ background-color: #1F6482;
+}
+a {
+ font-family: 'Noto Sans', sans-serif;
+ font-weight: 700;          /* Bold */
+ font-size: 0.75rem;        /* Equivalent to "xxxs" ~ 12px */
+ line-height: 1.5;          /* Matches medium line-height */
+ letter-spacing: 0;         /* 0% */
+ text-transform: uppercase; /* Uppercase */
+ color: white !important;   /* Keep white text */
+}
