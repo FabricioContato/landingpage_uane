@@ -7,7 +7,7 @@ function Navbar(){
  return(
 
   <nav className={"navbar navbar-expand-lg navbar-dark " + style.bg_nav}>
-   <div className="container-fluid">
+   <div className="container">
      <a className="navbar-brand" href="#">
        <img src={uane_logo} alt="uane logo" width="75" height="24"/>
      </a>
