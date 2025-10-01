@@ -1,0 +1,30 @@
+.custom_a {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+.custom_a:link {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.custom_a:visited {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.custom_a:hover {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.custom_a:active {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+.footer_bg {
+ background-color: #DFDFDF;
+}

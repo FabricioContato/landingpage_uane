@@ -5,6 +5,7 @@ import CourseStats from "./components/CourseStats/CourseStats"
 import CollapsiblePanels from "./components/CollapsiblePanels/CollapsiblePanels"
 import CourseCardGrid from "./components/CourseCardGrid/CourseCardGrid"
 import InvestimentCards from "./components/InvestimentCards/InvestimentCards"
+import Footer from "./components/Footer/Footer"
 
 export default function App() {
 
@@ -44,6 +45,7 @@ return (
 <CollapsiblePanels title="O que você vai aprender aprender"/>
 <CourseCardGrid courses={coursesData} />
 <InvestimentCards/>
+<Footer/>
 </>
 );
 }
