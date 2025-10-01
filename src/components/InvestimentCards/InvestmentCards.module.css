@@ -1,0 +1,28 @@
+.custom_a:link {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.custom_a:visited {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+.custom_a:hover {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}.custom_a:active {
+  color: #1F6482 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+.enroll_button {
+ background-color: #138E98; 
+ color: white
+}
+
+.left_border {
+ border-left: 4px solid #138E98;
+}
