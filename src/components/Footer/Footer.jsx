@@ -37,8 +37,8 @@ const Footer = () => {
      <div style={{backgroundColor: "#1F6482"}}>
       <div className="container">
         <div className="row py-3 justify-content-between">
-          <h5 className="col-10  text-start text-white fw-light">Av. Aguanambi, 282 A - Joaquim Távora, Fortaleza - CE, 60055-402</h5>
-          <h5 className="col-2  text-end text-white">Expediente</h5>
+          <h5 className="col-8  text-start text-white fw-light">Av. Aguanambi, 282 A - Joaquim Távora, Fortaleza - CE, 60055-402</h5>
+          <h5 className="col-4  text-end text-white">Expediente</h5>
         </div>
       </div>
      </div>
