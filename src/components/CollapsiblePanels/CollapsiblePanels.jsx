@@ -14,9 +14,9 @@ const CollapsiblePanels = ({ title = "Informações", data = {"test_key": "test_
 
         <div className="accordion" id="infoAccordion">
           {Object.entries(data).map(([key, value], index) => {
-	    const randomInt = Math.floor(Math.random() * 100000000);
+	          const randomInt = Math.floor(Math.random() * 100000000);
             
-	    const collapseId = `collapse${index}-${randomInt}`;
+	          const collapseId = `collapse${index}-${randomInt}`;
             const headingId = `heading${index}-${randomInt}`;
 
             return (
