@@ -52,7 +52,7 @@ Substitua `"127.0.0.1"` pelo endereço público do servidor.
 - Estilização e responsividade com **Bootstrap 5**.
 - Arquivos estáticos do React servidos por **Express**.
 - Dados dos cursos fornecidos por uma **API REST em PHP**.  
-  > Atualmente, a API não se comunica com banco de dados; os dados são internos.
+  > Atualmente, a API não se comunica com banco de dados; os dados estão em uma estrutura de dados junto do código da API.
 
 ---
 
