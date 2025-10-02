@@ -24,7 +24,8 @@ export default function App() {
   useEffect(() => {
 
     const dataFetch = async () => {
-      const response = await fetch(`http://127.0.0.1:8000/?id=${idParam.current}`);
+      const ip = "127.0.0.1";
+      const response = await fetch(`http://${ip}:8000/?id=${idParam.current}`);
       const data = await response.json();
 
       const heroSectionObj_ = {};
