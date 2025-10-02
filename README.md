@@ -21,6 +21,8 @@ Isso será suficiente para subir o sistema.
 
 Quando o sistema estiver rodando, acesse: [http://localhost:3000](http://localhost:3000)
 
+Você pode se informar sobre 5 cursos diferentes . na seção de cursos, click em um card de algum curso para carregar suas informaçõe!
+
 ### Acessando a aplicação em outros dispositivos na rede local
 
 Para acessar a aplicação de outros dispositivos na mesma rede:
