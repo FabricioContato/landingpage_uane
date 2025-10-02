@@ -1,16 +1,71 @@
-# React + Vite
+# Projeto Landing Page - Processo Seletivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Como utilizar o sistema
 
-Currently, two official plugins are available:
+Antes de iniciar, certifique-se de que o sistema operacional hospedeiro possua instalados:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Docker
+- Docker Compose
 
-## React Compiler
+Além disso, verifique se as portas **3000** e **8000** do seu computador não estão ocupadas.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Iniciando o projeto
 
-## Expanding the ESLint configuration
+No diretório raiz do projeto, execute:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+docker-compose up --build
+
+obs: a flag --build é especialmente importante se você fez alguma alteração no código
+
+Isso será suficiente para subir o sistema.
+
+Quando o sistema estiver rodando, acesse: [http://localhost:3000](http://localhost:3000)
+
+### Acessando a aplicação em outros dispositivos na rede local
+
+Para acessar a aplicação de outros dispositivos na mesma rede:
+
+1. Abra o arquivo `src/App.jsx`.
+2. Modifique a linha 27 (const ip = "127.0.0.1";)
+
+
+Substitua `"127.0.0.1"` pelo IP da máquina hospedeira.
+
+### Acessando a aplicação via internet
+
+Para acesso público:
+
+1. Instale o sistema em um servidor público.
+2. Abra o arquivo `src/App.jsx`.
+3. Modifique a linha 27 (const ip = "127.0.0.1";)
+
+Substitua `"127.0.0.1"` pelo endereço público do servidor.
+
+---
+
+## Decisões técnicas
+
+- O projeto utiliza **Docker** e **Docker Compose** para facilitar o deploy via containers.
+- Frontend desenvolvido em **React**, de forma modular.
+- Estilização e responsividade com **Bootstrap 5**.
+- Arquivos estáticos do React servidos por **Express**.
+- Dados dos cursos fornecidos por uma **API REST em PHP**.  
+  > Atualmente, a API não se comunica com banco de dados; os dados são internos.
+
+---
+
+## Pontos a melhorar
+
+- Implementar tratamento de exceções.
+- Finalizar detalhes pendentes do frontend.
+- Integrar a API PHP com banco de dados.
+- Avaliar o uso de framework PHP moderno (**Laravel**) na API.
+- Implementar testes automatizados.
+- Melhorar a documentação e instruções de deploy.
+
+---
+
+## Observações
+
+- Certifique-se de que as portas necessárias estejam liberadas.
+- Sempre faça rebuild do container após alterações significativas no código.
