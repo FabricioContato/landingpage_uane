@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./CourseCard.module.css"
 
-const CourseCard = ({ image, tags = [], title, author }) => {
+const CourseCard = ({ image, tags = [], title, author, url }) => {
   return (
-    <div className="card h-100 shadow-sm d-flex flex-column">
+    <a href={url} className={"card h-100 shadow-sm d-flex flex-column " + style.custom_a}>
       {/* Image */}
       <img src={image} className="card-img-top" alt={title} />
 
@@ -24,7 +24,7 @@ const CourseCard = ({ image, tags = [], title, author }) => {
         {/* Author */}
         <p className="mb-0 small">Por {author}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
